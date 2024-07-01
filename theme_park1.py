@@ -74,8 +74,6 @@ for park_group in parks_data:
 
 park_db = pd.DataFrame(all_ride_details,columns = ["park_name", "ride_name", "ride_status", "wait_time"])
 
-park_db.to_csv('park_db.csv')
-
 park_db
 
 conn = psql.connect(database = "pagila",
