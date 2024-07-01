@@ -5,6 +5,8 @@ import psycopg2 as psql
 import os
 from dotenv import load_dotenv
 
+load_dotenv()
+
 username = os.getenv('sql_username')
 password = os.getenv('sql_password')
 my_host = os.getenv('host')
